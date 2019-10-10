@@ -22,7 +22,6 @@ export default class Order extends React.PureComponent {
 
 	render() {
 		const {order: {shop, date}} = this.props;
-
 		return (
 			<div className='Order'>
 				<div className='Order-header'>
