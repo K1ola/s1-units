@@ -158,7 +158,7 @@ describe('sortByItemNames function', () => {
 		 items: ['cc', 'dd'],
 		};
 		const order2 = {
-		 items: ['aa', 'bb'],
+		 items: ['aa', 'bbq'],
 		};
 		const result = sortByItemNames(order1, order2);
 		expect(result).toBe(1);
