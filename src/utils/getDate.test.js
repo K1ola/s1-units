@@ -1,15 +1,16 @@
-// import getDate from './getDate';
-const getDate = require('./getDate');
+import { getDate } from './getDate';
+// const getDate = require('./getDate');
 
 it('check date', () => {
-  const dateObj = new Date();
+  const date = getDate(0);
 
-  expect(dateObj).toEqual(dateObj);
+  expect(date).toBe('1 января, чт, 1970 год');
 });
 
-it('check date with null', () => {
-    const dateObj = null;
+it('check date with null', () => {  
+  const date = getDate(null);
   
-    expect(dateObj).toEqual(null);
-  });
+  expect(date).toBeNull();
+});
+
 
